@@ -1,5 +1,6 @@
 package com.example.practice.entity;
 
+import com.example.practice.enums.Sentiment;
 import jakarta.persistence.Id;
 import lombok.Data;
 import lombok.Getter;
@@ -22,5 +23,5 @@ public class JournalEntry {
     private String title;
     private String content;
     private LocalDateTime date;
-
+    private Sentiment sentiment;
 }
